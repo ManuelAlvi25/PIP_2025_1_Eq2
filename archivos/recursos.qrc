@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="Logos">
+    <file>fians.png</file>
+    <file>56f38-batman-logo-png-transparent-free.png</file>
+    <file>escudo_imagotipoUAT.png</file>
+    <file>mishi.jpg</file>
+    <file>nata.jpg</file>
+    <file>peso.jpg</file>
+  </qresource>
+  <qresource prefix="Ejercicios">
+    <file>56f38-batman-logo-png-transparent-free.png</file>
+    <file>escudo_imagotipoUAT.png</file>
+    <file>fians.png</file>
+    <file>nata.jpg</file>
+  </qresource>
+</RCC>
