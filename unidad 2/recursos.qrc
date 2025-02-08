@@ -1,10 +1,26 @@
 <RCC>
   <qresource prefix="Logos">
+    <file>fians.png</file>
+    <file>56f38-batman-logo-png-transparent-free.png</file>
+    <file>escudo_imagotipoUAT.png</file>
     <file>mishi.jpg</file>
     <file>nata.jpg</file>
     <file>peso.jpg</file>
   </qresource>
   <qresource prefix="Ejercicios">
+    <file>ed maverick.jpg</file>
+    <file>edward elric.jpg</file>
+    <file>geto.jpg</file>
+    <file>kevin y ed.jpg</file>
+    <file>kevin.jpg</file>
+    <file>miles.jpg</file>
+    <file>snoopy.jpg</file>
+    <file>spider.jpg</file>
+    <file>starlord.jpg</file>
+    <file>toji.jpg</file>
+    <file>56f38-batman-logo-png-transparent-free.png</file>
+    <file>escudo_imagotipoUAT.png</file>
+    <file>fians.png</file>
     <file>nata.jpg</file>
   </qresource>
 </RCC>

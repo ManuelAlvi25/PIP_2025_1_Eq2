@@ -15,9 +15,28 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.SelectorImagen.valueChanged.connect(self.CambiaValor)
 
 
+        self.diccionarioDatos = {
+            0: (":/Ejercicios/nata.jpg",["Nata","22 años","corridos tumbados"]),
+            1: (":/Ejercicios/kevin.jpg", ["kevin", "22 años", "folk"]),
+            2: ("::/Ejercicios/ed maverick.jpg", ["ed", "22 años", "folk"])
+
+        }
+        self.indice = 0
+        self.obtenerDatos()
+
+
 
 
     # Area de los slots
+    def obtenerDatos(self):
+        nombre = self.diccionarioDatos[self.indice][1][0]
+        edad = self.diccionarioDatos[self.indice][1][1]
+        musica = self.diccionarioDatos[self.indice][1][2]
+        self.txt_nombre.setText(nombre)
+        self.txt_edad.setText(edad)
+        self.txt_musica.setText(musica)
+
+
     def CambiaValor(self):
         value = self.SelectorImagen.value()
         self.txt_valor.setText(str(value))
