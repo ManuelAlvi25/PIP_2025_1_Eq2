@@ -2,7 +2,7 @@ import sys
 from PyQt5 import uic, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 
-qtCreatorFile = "E07.ui"
+qtCreatorFile = "E08_CalcularLaVelocidadDistanciaYTiempo.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -11,19 +11,15 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         # Area de los Signals
-        self.PROMEDIO.clicked.connect(self.Cpromedio)
+        self.calcular.clicked.connect(self.CVelocidad)
 
         # Area de los slots
-    def Cpromedio(self):
+    def CVelocidad(self):
         try:
             a = float(self.A.text())
             b = float(self.B.text())
-            c = float(self.C.text())
-            d = float(self.D.text())
-            e = float(self.E.text())
-            suma = a + b + c + d + e
-            Promedio = suma // 5
-            self.msj("El promedio es " + str(Promedio))
+            Velocidad = a // b
+            self.msj("La Velocidad es " + str(Velocidad) + " KM/H")
         except Exception as error:
             print(error)
 
