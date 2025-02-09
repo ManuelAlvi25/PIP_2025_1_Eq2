@@ -2,7 +2,7 @@ import sys
 from PyQt5 import uic, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 
-qtCreatorFile = "P06.ui"
+qtCreatorFile = "E06.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
