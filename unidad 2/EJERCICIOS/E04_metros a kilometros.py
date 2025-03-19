@@ -1,5 +1,5 @@
 import sys
-
+import recursos_rc
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
 
@@ -7,7 +7,7 @@ from PyQt5.uic import loadUi
 class Conversor(QMainWindow):
     def __init__(self):
         super(Conversor, self).__init__()
-        loadUi("metros a kilometros.ui", self)
+        loadUi("E04_metros a kilometros.ui", self)
         self.pushButton_convertir.clicked.connect(self.convertir_distancia)
         self.dial.valueChanged.connect(self.actualizar_metros_con_dial)
 

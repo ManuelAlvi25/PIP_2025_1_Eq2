@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic, QtWidgets
 
-qtCreatorFile = "EP07_TeoremaDePitagoras.ui"
+qtCreatorFile = "E07_TeoremaDePitagoras.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):

@@ -1,11 +1,12 @@
 import sys
+import recursos_rc
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUi
 
 class Conversor(QMainWindow):
     def __init__(self):
         super(Conversor, self).__init__()
-        loadUi("Cambio de grados centigrados fahrenheit.ui", self)
+        loadUi("E01_Cambio de grados centigrados fahrenheit.ui", self)
         self.pushButton_convertir.clicked.connect(self.convertir_temperatura)
         self.horizontalSlider.valueChanged.connect(self.actualizar_celsius_con_slider)
 

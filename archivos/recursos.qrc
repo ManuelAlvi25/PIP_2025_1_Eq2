@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="Logos">
+    <file>Papel.jpg</file>
+    <file>Piedra.jpg</file>
+    <file>Tijeras.jpg</file>
     <file>fians.png</file>
     <file>56f38-batman-logo-png-transparent-free.png</file>
     <file>escudo_imagotipoUAT.png</file>

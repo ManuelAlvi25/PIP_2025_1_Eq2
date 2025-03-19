@@ -145,7 +145,7 @@ background-color: rgb(255, 0, 0);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Imagenes/logo equipo.png</pixmap>
+     <pixmap resource="../../archivos/recursos.qrc">:/Ejercicios/56f38-batman-logo-png-transparent-free.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -164,7 +164,7 @@ background-color: rgb(255, 0, 0);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Imagenes/logo.png</pixmap>
+     <pixmap resource="../../archivos/recursos.qrc">:/Ejercicios/fians.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -175,15 +175,15 @@ background-color: rgb(255, 0, 0);</string>
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>141</width>
-      <height>91</height>
+      <width>121</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Imagenes/logo-uat.png</pixmap>
+     <pixmap resource="../../archivos/recursos.qrc">:/Ejercicios/escudo_imagotipoUAT.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -196,12 +196,14 @@ background-color: rgb(255, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>614</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../archivos/recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
