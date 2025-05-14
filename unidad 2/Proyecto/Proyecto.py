@@ -11,6 +11,12 @@ class Memorama(QtWidgets.QMainWindow):
         self.btnReiniciar.setText("Iniciar")
         self.btnReiniciar.clicked.connect(self.iniciar_juego)
         self.pares = 5
+
+
+
+
+
+
         self.imagenes = [f"Imagen{i}.jpg" for i in range(1, self.pares + 1)] * 2
         self.botones = []
         self.seleccionadas = []
