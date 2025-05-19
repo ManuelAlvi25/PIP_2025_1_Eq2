@@ -9,7 +9,7 @@ import P3_vPython_Calcula_IMC as interfaz
 class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)
+        interfaz.Ui_MainWindow.__init__(self)
         self.setupUi(self)
         # Área de los Signals
 

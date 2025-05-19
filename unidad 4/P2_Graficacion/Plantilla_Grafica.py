@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import recursos_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -23,6 +23,31 @@ class Ui_MainWindow(object):
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(40, 80, 47, 13))
         self.label_2.setObjectName("label_2")
+
+        self.imagen = QtWidgets.QLabel(self.centralwidget)
+        self.imagen.setGeometry(QtCore.QRect(0, 0, 100, 70))
+        self.imagen.setPixmap(QtGui.QPixmap(r"C:/Users/Manuel/Desktop/PIP_2025_1_Eq0/archivos/uat.jpg"))
+        self.imagen.setScaledContents(True)
+        self.imagen.setObjectName("imagen")
+        self.imagen.raise_()
+
+
+        self.imagen_2 = QtWidgets.QLabel(self.centralwidget)
+        self.imagen_2.setGeometry(QtCore.QRect(692, 0, 100, 70))  # 792 - 100 = 692
+        self.imagen_2.setPixmap(QtGui.QPixmap(r"C:/Users/Manuel/Desktop/PIP_2025_1_Eq0/archivos/fi.jpg"))
+        self.imagen_2.setScaledContents(True)
+        self.imagen_2.setObjectName("imagen_2")
+        self.imagen_2.raise_()
+
+
+        self.imagen_3 = QtWidgets.QLabel(self.centralwidget)
+        self.imagen_3.setGeometry(QtCore.QRect(672, 500, 100, 100))  # 792 - 120, 600 - 100
+        self.imagen_3.setPixmap(QtGui.QPixmap(
+            r"C:/Users/Manuel/Desktop/PIP_2025_1_Eq0/archivos/56f38-batman-logo-png-transparent-free.png"))
+        self.imagen_3.setScaledContents(True)
+        self.imagen_3.setObjectName("imagen_3")
+        self.imagen_3.raise_()
+
         self.txt_polinomio = QtWidgets.QLineEdit(self.centralwidget)
         self.txt_polinomio.setGeometry(QtCore.QRect(90, 30, 181, 31))
         self.txt_polinomio.setObjectName("txt_polinomio")
@@ -56,10 +81,10 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(430, 100, 91, 16))
         self.label_3.setObjectName("label_3")
-        self.sp_estilo = QtWidgets.QSpinBox(self.centralwidget)
+        self.sp_estilo = QtWidgets.QComboBox(self.centralwidget)
         self.sp_estilo.setGeometry(QtCore.QRect(430, 120, 91, 22))
         self.sp_estilo.setObjectName("sp_estilo")
-        self.sp_color = QtWidgets.QSpinBox(self.centralwidget)
+        self.sp_color = QtWidgets.QComboBox(self.centralwidget)
         self.sp_color.setGeometry(QtCore.QRect(580, 50, 141, 22))
         self.sp_color.setObjectName("sp_color")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)

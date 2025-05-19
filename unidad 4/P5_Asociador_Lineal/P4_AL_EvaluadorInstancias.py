@@ -7,8 +7,9 @@
 
 import numpy as n
 
-archivo = open("instancia_claseExplicacion_training.txt")
-contenido = archivo.readlines()
+archivo = open("instancia_claseExplicacion.txt")
+contenido = [line.strip() for line in archivo.readlines() if line.strip() != ""]  # Elimina saltos de línea vacíos
+archivo.close()
 
 X = contenido[3:3+int(contenido[1])]
 X = [i.split("\t") for i in X]
@@ -42,8 +43,9 @@ print(W)
 #################################################################################################
 #################################################################################################
 print("Prueba...")
-archivo = open("instancia_claseExplicacion_test.txt")
-contenido = archivo.readlines()
+archivo = open("instancia_claseExplicacion.txt")
+contenido = [line.strip() for line in archivo.readlines() if line.strip() != ""]  # Elimina saltos de línea vacíos
+archivo.close()
 
 X = contenido[3:3+int(contenido[1])]
 X = [i.split("\t") for i in X]

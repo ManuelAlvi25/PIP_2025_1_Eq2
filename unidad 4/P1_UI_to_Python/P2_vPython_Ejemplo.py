@@ -51,21 +51,21 @@ class Ui_MainWindow(object):
         self.imagen_2.setGeometry(QtCore.QRect(540, 0, 91, 71))
         self.imagen_2.setStyleSheet("")
         self.imagen_2.setText("")
-        self.imagen_2.setPixmap(QtGui.QPixmap(":/Logos/FIT_logo_vertical.png"))
+        self.imagen_2.setPixmap(QtGui.QPixmap(r"C:\Users\Manuel\Desktop\PIP_2025_1_Eq0\archivos\fi.jpg"))
         self.imagen_2.setScaledContents(True)
         self.imagen_2.setObjectName("imagen_2")
         self.imagen = QtWidgets.QLabel(self.centralwidget)
         self.imagen.setGeometry(QtCore.QRect(20, 10, 131, 71))
         self.imagen.setStyleSheet("")
         self.imagen.setText("")
-        self.imagen.setPixmap(QtGui.QPixmap(":/Logos/log_uat_nuevo.png"))
+        self.imagen.setPixmap(QtGui.QPixmap(r"C:\Users\Manuel\Desktop\PIP_2025_1_Eq0\archivos\uat.jpg"))
         self.imagen.setScaledContents(True)
         self.imagen.setObjectName("imagen")
         self.imagen_3 = QtWidgets.QLabel(self.centralwidget)
         self.imagen_3.setGeometry(QtCore.QRect(500, 280, 111, 71))
         self.imagen_3.setStyleSheet("")
         self.imagen_3.setText("")
-        self.imagen_3.setPixmap(QtGui.QPixmap(":/Ejercicios/ImagenGatoEuropeo.png"))
+        self.imagen_3.setPixmap(QtGui.QPixmap(r"C:\Users\Manuel\Desktop\PIP_2025_1_Eq0\archivos\56f38-batman-logo-png-transparent-free.png"))
         self.imagen_3.setScaledContents(True)
         self.imagen_3.setObjectName("imagen_3")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -95,3 +95,13 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Número 2:"))
         self.label_3.setText(_translate("MainWindow", "Número 3:"))
 import Recursos_rc
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+

@@ -4,7 +4,8 @@
 import numpy as n
 
 archivo = open("instancia_claseExplicacion.txt")
-contenido = archivo.readlines()
+contenido = [line.strip() for line in archivo.readlines() if line.strip() != ""]  # Elimina saltos de línea vacíos
+archivo.close()
 
 print("Entradas:")
 X = contenido[3:3+int(contenido[1])]

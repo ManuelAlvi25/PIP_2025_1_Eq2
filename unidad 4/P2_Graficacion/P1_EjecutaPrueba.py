@@ -1,5 +1,6 @@
 import sys
 from PyQt5 import uic, QtWidgets, QtGui
+
 qtCreatorFile = "Plantilla_Grafica.ui"  # Nombre del archivo aquí.
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
 

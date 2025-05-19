@@ -12,28 +12,28 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
 
         # Área de los Signals / Configuracion
         self.btn_graficar.clicked.connect(self.graficar)
-        self.btn_titulo.clicked.connect(self.titulo)
-        self.btn_grilla.clicked.connect(self.grilla)
+        self.btn_graficar_2.clicked.connect(self.titulo)
+        self.btn_off.clicked.connect(self.grilla)
         self.btn_limpiar.clicked.connect(self.limpiar)
 
         #                              text      data
-        self.cb_estiloLinea.addItem("Estilo: :", ":")
-        self.cb_estiloLinea.addItem("Estilo: -", "-")
-        self.cb_estiloLinea.addItem("Estilo: --", "--")
-        self.cb_estiloLinea.addItem("Estilo: -.", "-.")
-        self.cb_estiloLinea.currentIndexChanged.connect(self.estiloLinea)
+        self.sp_estilo.addItem("Estilo: :", ":")
+        self.sp_estilo.addItem("Estilo: -", "-")
+        self.sp_estilo.addItem("Estilo: --", "--")
+        self.sp_estilo.addItem("Estilo: -.", "-.")
+        self.sp_estilo.currentIndexChanged.connect(self.estiloLinea)
 
-        self.cb_ColorLinea.addItem("Negro", "black")
-        self.cb_ColorLinea.addItem("Rojo", "red")
-        self.cb_ColorLinea.addItem("Azul", "blue")
-        self.cb_ColorLinea.addItem("Verde", "green")
-        self.cb_ColorLinea.currentIndexChanged.connect(self.colorLinea)
+        self.sp_color.addItem("Negro", "black")
+        self.sp_color.addItem("Rojo", "red")
+        self.sp_color.addItem("Azul", "blue")
+        self.sp_color.addItem("Verde", "green")
+        self.sp_color.currentIndexChanged.connect(self.colorLinea)
 
-        self.sp_anchoLinea.setValue(1)
-        self.sp_anchoLinea.setMaximum(10)
-        self.sp_anchoLinea.setMinimum(1)
-        self.sp_anchoLinea.setSingleStep(1)
-        self.sp_anchoLinea.valueChanged.connect(self.anchoLinea)
+        self.sp_ancho.setValue(1)
+        self.sp_ancho.setMaximum(10)
+        self.sp_ancho.setMinimum(1)
+        self.sp_ancho.setSingleStep(1)
+        self.sp_ancho.valueChanged.connect(self.anchoLinea)
 
         #VALORES POR DEFECTO:
         self.estiloLinea = ":"
@@ -42,17 +42,17 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
 
         ################################################################################
 
-        self.sp_Xmin.setValue(0)
-        self.sp_Xmin.setMaximum(10000)
-        self.sp_Xmin.setMinimum(-10000)
-        self.sp_Xmin.setSingleStep(1)
-        self.sp_Xmin.valueChanged.connect(self.minX)
+        self.sp_xmin.setValue(0)
+        self.sp_xmin.setMaximum(10000)
+        self.sp_xmin.setMinimum(-10000)
+        self.sp_xmin.setSingleStep(1)
+        self.sp_xmin.valueChanged.connect(self.minX)
 
-        self.sp_Xmax.setValue(10)
-        self.sp_Xmax.setMaximum(10000)
-        self.sp_Xmax.setMinimum(-10000)
-        self.sp_Xmax.setSingleStep(1)
-        self.sp_Xmax.valueChanged.connect(self.maxX)
+        self.sp_xmax.setValue(10)
+        self.sp_xmax.setMaximum(10000)
+        self.sp_xmax.setMinimum(-10000)
+        self.sp_xmax.setSingleStep(1)
+        self.sp_xmax.valueChanged.connect(self.maxX)
 
         self.sp_divisionesX.setValue(10)
         self.sp_divisionesX.setMaximum(10)
@@ -60,17 +60,17 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
         self.sp_divisionesX.setSingleStep(1)
         self.sp_divisionesX.valueChanged.connect(self.divisionesX)
 
-        self.sp_Ymin.setValue(0)
-        self.sp_Ymin.setMaximum(10000)
-        self.sp_Ymin.setMinimum(-10000)
-        self.sp_Ymin.setSingleStep(1)
-        self.sp_Ymin.valueChanged.connect(self.minY)
+        self.sp_ymin.setValue(0)
+        self.sp_ymin.setMaximum(10000)
+        self.sp_ymin.setMinimum(-10000)
+        self.sp_ymin.setSingleStep(1)
+        self.sp_ymin.valueChanged.connect(self.minY)
 
-        self.sp_Ymax.setValue(10)
-        self.sp_Ymax.setMaximum(10000)
-        self.sp_Ymax.setMinimum(-10000)
-        self.sp_Ymax.setSingleStep(1)
-        self.sp_Ymax.valueChanged.connect(self.maxY)
+        self.sp_ymax.setValue(10)
+        self.sp_ymax.setMaximum(10000)
+        self.sp_ymax.setMinimum(-10000)
+        self.sp_ymax.setSingleStep(1)
+        self.sp_ymax.valueChanged.connect(self.maxY)
 
         self.sp_divisionesY.setValue(10)
         self.sp_divisionesY.setMaximum(10)
@@ -87,7 +87,7 @@ class MyApp(QtWidgets.QMainWindow, interfaz.Ui_MainWindow):
         self.yDivisiones = 10
 
         ##
-        self.btn_grilla.setText("ON")
+        self.btn_off.setText("ON")
 
     # Área de los Slots
     def minX(self):
